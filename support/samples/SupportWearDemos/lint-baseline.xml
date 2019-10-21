@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="5" by="lint 3.5.0-beta04" client="gradle" variant="debug" version="3.5.0-beta04">
+
+    <issue
+        id="WearStandaloneAppFlag"
+        message="Missing `&lt;meta-data android:name=&quot;com.google.android.wearable.standalone&quot; ../>` element"
+        errorLine1="    &lt;application android:icon=&quot;@drawable/app_sample_code&quot; android:label=&quot;SupportWearDemos&quot;"
+        errorLine2="     ~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="24"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="AllowBackup"
+        message="On SDK version 23 and up, your app data will be automatically backed up and restored on app install. Consider adding the attribute `android:fullBackupContent` to specify an `@xml` resource which configures which files to backup. More info: https://developer.android.com/training/backup/autosyncapi.html"
+        errorLine1="    &lt;application android:icon=&quot;@drawable/app_sample_code&quot; android:label=&quot;SupportWearDemos&quot;"
+        errorLine2="     ~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="24"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="AllowBackup"
+        message="Should explicitly set `android:allowBackup` to `true` or `false` (it&apos;s `true` by default, and that can have some security implications for the application&apos;s data)"
+        errorLine1="    &lt;application android:icon=&quot;@drawable/app_sample_code&quot; android:label=&quot;SupportWearDemos&quot;"
+        errorLine2="     ~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="24"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/app_sample_code.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/app_sample_code.png"/>
+    </issue>
+
+    <issue
+        id="GoogleAppIndexingWarning"
+        message="App is not indexable by Google Search; consider adding at least one Activity with an ACTION-VIEW intent filter. See issue explanation for more details."
+        errorLine1="    &lt;application android:icon=&quot;@drawable/app_sample_code&quot; android:label=&quot;SupportWearDemos&quot;"
+        errorLine2="    ^">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="24"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="    &lt;ImageView"
+        errorLine2="     ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/rd_demo.xml"
+            line="23"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="            mStateTextView.setText(&quot;Ambient&quot;);"
+        errorLine2="                                   ~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/android/support/wear/app/AmbientModeDemo.java"
+            line="53"
+            column="36"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="            mStateTextView.setText(&quot;Interactive&quot;);"
+        errorLine2="                                   ~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/android/support/wear/app/AmbientModeDemo.java"
+            line="61"
+            column="36"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="            holder.mView.setText(&quot;Holder at position &quot; + position);"
+        errorLine2="                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/android/support/wear/app/SimpleWearableRecyclerViewDemo.java"
+            line="67"
+            column="34"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="            holder.mView.setText(&quot;Holder at position &quot; + position);"
+        errorLine2="                                 ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/android/support/wear/app/SimpleWearableRecyclerViewDemo.java"
+            line="67"
+            column="34"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Item 1&quot;, should use `@string` resource"
+        errorLine1="    &lt;item android:title=&quot;Item 1&quot; android:id=&quot;@+id/item_1&quot; android:icon=&quot;@android:drawable/ic_menu_add&quot;/>"
+        errorLine2="          ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/menu/action_drawer_menu.xml"
+            line="3"
+            column="11"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Item 2&quot;, should use `@string` resource"
+        errorLine1="    &lt;item android:title=&quot;Item 2&quot; android:id=&quot;@+id/item_2&quot; android:icon=&quot;@android:drawable/ic_menu_agenda&quot;/>"
+        errorLine2="          ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/menu/action_drawer_menu.xml"
+            line="4"
+            column="11"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Item 3&quot;, should use `@string` resource"
+        errorLine1="    &lt;item android:title=&quot;Item 3&quot; android:id=&quot;@+id/item_3&quot; android:icon=&quot;@android:drawable/ic_menu_call&quot;/>"
+        errorLine2="          ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/menu/action_drawer_menu.xml"
+            line="5"
+            column="11"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Item 4&quot;, should use `@string` resource"
+        errorLine1="    &lt;item android:title=&quot;Item 4&quot; android:id=&quot;@+id/item_4&quot; android:icon=&quot;@android:drawable/ic_menu_delete&quot;/>"
+        errorLine2="          ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/menu/action_drawer_menu.xml"
+            line="6"
+            column="11"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Show V7 dialog&quot;, should use `@string` resource"
+        errorLine1="            android:text=&quot;Show V7 dialog&quot;/>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/alert_dialog_demo.xml"
+            line="35"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Show Framework dialog&quot;, should use `@string` resource"
+        errorLine1="            android:text=&quot;Show Framework dialog&quot;/>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/alert_dialog_demo.xml"
+            line="41"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;hello world!!&quot;, should use `@string` resource"
+        errorLine1="        android:text=&quot;hello world!!&quot;/>"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/ambient_demo.xml"
+            line="26"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Overlay Activity&quot;, should use `@string` resource"
+        errorLine1="        android:text=&quot;Overlay Activity&quot;/>"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/confirmation_overlay_demo.xml"
+            line="30"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Overlay View&quot;, should use `@string` resource"
+        errorLine1="        android:text=&quot;Overlay View&quot;/>"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/confirmation_overlay_demo.xml"
+            line="36"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;FrameLayout&quot;, should use `@string` resource"
+        errorLine1="        android:text=&quot;FrameLayout&quot;/>"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/wearable_drawers_frame_layout_demo.xml"
+            line="26"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;ScrollView Fragment&quot;, should use `@string` resource"
+        errorLine1="            android:text=&quot;ScrollView Fragment&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/wearable_drawers_scroll_view_demo.xml"
+            line="35"
+            column="13"/>
+    </issue>
+
+</issues>

@@ -1,0 +1,18 @@
+plugins {
+    id("AndroidXPlugin")
+    id("com.android.application")
+}
+
+dependencies {
+    implementation(project(":transition:transition"))
+    implementation(project(":appcompat"))
+    implementation(project(":recyclerview:recyclerview"))
+    implementation(project(":interpolator"))
+}
+
+android {
+    aaptOptions {
+        additionalParameters "--no-version-transitions"
+    }
+}
+
