@@ -19,7 +19,7 @@
     "@types/puppeteer": "^1.12.3",
     "express": "^4.16.4",
     "puppeteer": "^1.14.0",
-    "yarn": "^1.15.2"
+    "yarn": "^1.22.0"
   },
   "devDependencies": {
     "nodemon": "^1.18.11",
